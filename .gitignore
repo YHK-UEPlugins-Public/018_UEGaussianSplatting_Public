@@ -1,0 +1,211 @@
+#
+# This file tells Git about engine files that never really belong in source control.  They are usually build products, log 
+# files and intermediate files generated from a compiler or the engine runtime.
+#
+#
+# NOTE:
+#  Paths that start with / match paths relative to the root (where the .gitignore file is)
+#  Paths that end with / will match a folder and all files under it (but not a regular file with no extension)
+#  Use * for wildcards.  Wildcards stop at path separators
+#  Use ** for a wildcard that spans path separators
+#  Paths in this file should use forward slash characters, not back slashes
+#  Use \ to escape special characters like ! and #
+#  Use ! to negate a previous pattern.  But it doesn't work if the parent sub-folder was masked out already.
+# 
+
+# Ignore all files by default, but scan all directories
+*
+!*/
+
+# C/C++ source files
+!*.c
+!*.cc
+!*.cpp
+!*.cpp.template
+!*.h
+!*.h.template
+!*.hpp
+!*.inl
+!*.inc
+!*.m
+!*.mm
+!*.rc
+!*.def
+!*.exp
+!*.manifest
+!*.txx
+!*.cxx
+
+# Java source files
+!*.java
+!*.java.template
+
+# C# source files
+!*.cs
+!*.cs.template
+!*.aspx
+!*.resx
+
+# Shader formats
+!*.usf
+!*.ush
+!*.hlsl
+!*.glsl
+
+# Text files
+!*.txt
+!*.md
+
+# Script files
+!*.bat
+!*.sh
+!*.pl
+!*.py
+!*.js
+!*.command
+
+# Other configuration and markup files
+!*.ini
+!*.json
+!*.tps
+!*.xml
+!*.xaml
+!*.uproject
+!*.uplugin
+!*.html
+!*.html.template
+!*.css
+!*.udn
+!*.config
+!*.version
+!.git*
+
+# Projects and makefiles
+!*.cmake
+!*.mk
+!*.dsp
+!*.dsw
+!*.xcodeproj
+!*.xcconfig
+!*.vsprops
+!*.snippet
+!Makefile
+!Makefile.*
+!Settings.settings
+
+# VisualStudio
+!*.csproj
+!*.vcproj
+!*.vcxproj
+!*.vcxproj.filters
+!*.vcxproj.user
+!*.sln
+
+# Specific names
+!README
+!AUTHORS
+!LICENSE
+!FAQ
+!VERSION
+!ChangeLog
+
+# UE4 ".uasset" and ".umap"
+!*.uasset
+!*.umap
+
+# Vedio
+!*.avi
+!*.mp4
+
+# Ignore Unix backup files
+*~
+
+# Documents
+!*.doc
+!*.docx
+!*.xmind
+
+# 3ds max files
+!*.max
+!*.fbx
+
+# image files
+!*.tga
+!*.jpg
+!*.png
+!*.bmp
+!*.psd
+!*.tif
+!*.ico
+!*.svg
+
+# pdf files
+!*.pdf
+
+# 
+!*.xls
+!*.xlsx
+
+#
+!*.vsdx
+!*.mpp
+
+# .dat
+!*.dat
+
+# SQLite Database Files
+!*.db
+*.VC.db
+!*.db3
+
+# .dll, .lib and .exe
+!*.dll
+!*.lib
+!*.exe
+
+# .a
+!*.a
+
+# ignore UE4 Saved Folder
+Saved/
+Intermediate/
+Build/
+WindowsNoEditor/
+!*Binaries/
+
+# do not ignore Visual Studio ".vs" Folder
+*.suo
+
+# vtk data file
+!*.dcm
+
+# vbs
+!*.vbs
+!*.wsf
+
+# zip
+!*.zip
+
+# uml
+!*.uml
+
+
+# Created by https://www.gitignore.io/api/xcode
+
+### Xcode ###
+!*.pbxproj
+!*.xcscheme
+!*.plist
+!*.xcworkspacedata
+!*.xcuserstate
+
+!*.xcworkspacedata
+!*.xcuserstate
+!*.xcsettings
+!*.xcbkptlist
+
+#UE
+!*.modules
+!*.target
+
+!*.ply

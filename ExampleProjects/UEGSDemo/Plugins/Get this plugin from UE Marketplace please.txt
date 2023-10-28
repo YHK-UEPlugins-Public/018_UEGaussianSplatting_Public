@@ -1,0 +1,1 @@
+UEGaussianSplatting Plugin: https://github.com/YHK-UEPlugins-Public/018_UEGaussianSplatting_Public.git
