@@ -131,7 +131,7 @@ Copy it to the "**Plugins**" folder of this Example Project:
 
 ![image-20231103215528964](README/00_Res/01_Images/image-20231103215528964.png)
 
-**Note**: Since the "**3D Gaussian Splatting**"(Or named "**UEGS Model**" in this "UEGaussianSplatting" Plugin) file is relatively large, and the storage space of Git repository on GitHub is limited. So onnly these 4 "3D Gaussian Splatting" sample files and levels are uploaded at present.
+**Note**: Since the "**3D Gaussian Splatting**"(Or named "**UEGS Model**" in this "UEGaussianSplatting" Plugin) file is relatively large, and the storage space of Git repository on GitHub is limited. So only these 4 "3D Gaussian Splatting" sample files and levels are uploaded at present.
 
 ### 6. If the The "UEGS Model" is not visible, should recompile the following material:
 
@@ -153,7 +153,7 @@ Copy it to the "**Plugins**" folder of this Example Project:
 
 ## Get new "3D Gaussian Splatting" resources from "[poly.cam](https://poly.cam/explore?feed=splat)" and import into our UE Example Project
 
-### 1.Open one "3D Gaussian Splatting" resource in the "[poly.cam](https://poly.cam/explore?feed=splat)", and click the "Save Capture" Button. Save it to our own Album.
+### 1.Open one "3D Gaussian Splatting" resource in the "[poly.cam](https://poly.cam/explore?feed=splat)", and click the "Save Capture" Button. Save it to our own Album(Note: advance registration and login required).
 
 https://poly.cam/capture/9badeef6-8005-4324-9979-1260adc8dba5
 
