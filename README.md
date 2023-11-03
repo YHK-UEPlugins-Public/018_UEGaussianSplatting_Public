@@ -1,5 +1,9 @@
 **Note:** There is a bug with the github DownloadZIP(".map" asset file are Git LFS file, Github DownloadZIP results in the ".map" file only 1KB).  **You should clone this repository by HTTPs or SSH of this git, Not by Github DownloadZIP.**
 
+# Community Communication
+
+**Discord**: https://discord.gg/kCc8qM3C
+
 # Introduce
 
 ## PRODUCT TITLE：
