@@ -1,1 +1,1 @@
-UEGaussianSplatting Plugin: https://github.com/YHK-UEPlugins-Public/018_UEGaussianSplatting_Public.git
+UEGaussianSplatting Plugin: https://www.unrealengine.com/marketplace/en-US/product/uegaussiansplatting-3d-gaussian-splatting-rendering-feature-for-ue
