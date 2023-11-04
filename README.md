@@ -123,7 +123,7 @@ https://www.unrealengine.com/marketplace/en-US/product/uegaussiansplatting-3d-ga
 
 
 
-### 3.Copy the "**UEGS**" plugin  from UnrealEngine Install Path to the "Plugins" folder of this Example Project.
+### 3. Copy the "**UEGS**" plugin  from UnrealEngine Install Path to the "Plugins" folder of this Example Project.
 
 Copy the "**UEGS**" plugin of UnrealEngine Install Path:
 
@@ -135,13 +135,13 @@ Copy it to the "**Plugins**" folder of this Example Project:
 
 
 
-### 4.Make sure the "`UEGSDemo.uproject`" is associated with the correct engine version. And click the "**`UEGSDemo.uproject`**" to open this Example Project.
+### 4. Make sure the "`UEGSDemo.uproject`" is associated with the correct engine version. And click the "**`UEGSDemo.uproject`**" to open this Example Project.
 
 "`.\ExampleProjects\UEGSDemo\UEGSDemo.uproject`":
 
 ![image-20231103215203598](README/00_Res/01_Images/image-20231103215203598.png)
 
-### 5.Find and open the Example Maps:
+### 5. Find and open the Example Maps:
 
 /Script/Engine.World'/Game/UEGSDemo/MAPs/MAP_UEGSDemo_Overview_01.MAP_UEGSDemo_Overview_01'
 
@@ -163,13 +163,13 @@ Copy it to the "**Plugins**" folder of this Example Project:
 
 ![image-20231103212231090](README/00_Res/01_Images/image-20231103212231090.png)
 
-### 7.For other issues, please refer to the "**Issues Fixing**" chapter below.
+### 7. For other issues, please refer to the "**Issues Fixing**" chapter below.
 
 
 
 ## Get new "3D Gaussian Splatting" resources from "[poly.cam](https://poly.cam/explore?feed=splat)" and import into our UE Example Project
 
-### 1.Open one "3D Gaussian Splatting" resource in the "[poly.cam](https://poly.cam/explore?feed=splat)", and click the "Save Capture" Button. Save it to our own Album(Note: advance registration and login required).
+### 1. Open one "3D Gaussian Splatting" resource in the "[poly.cam](https://poly.cam/explore?feed=splat)", and click the "Save Capture" Button. Save it to our own Album(Note: advance registration and login required).
 
 https://poly.cam/capture/9badeef6-8005-4324-9979-1260adc8dba5
 
@@ -181,7 +181,7 @@ https://poly.cam/capture/9badeef6-8005-4324-9979-1260adc8dba5
 
 ![image-20231103221749723](README/00_Res/01_Images/image-20231103221749723.png)
 
-### 2.Open the "3D Gaussian Splatting " resource from the corresponding Album. Click the "Download" button to download it as a ".ply" file.
+### 2. Open the "3D Gaussian Splatting " resource from the corresponding Album. Click the "Download" button to download it as a ".ply" file.
 
 https://poly.cam/albums
 
@@ -191,7 +191,7 @@ https://poly.cam/albums
 
 ![image-20231103222316566](README/00_Res/01_Images/image-20231103222316566.png)
 
-### 3.Drag the "**.ply**" file into the "Content Browser" of the UE Example Project(With "**UEGaussianSplatting**" plugin Enabled.)
+### 3. Drag the "**.ply**" file into the "Content Browser" of the UE Example Project(With "**UEGaussianSplatting**" plugin Enabled.)
 
 ![image-20231103222704283](README/00_Res/01_Images/image-20231103222704283.png)
 
