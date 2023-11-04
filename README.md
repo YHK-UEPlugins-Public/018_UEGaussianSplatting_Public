@@ -1,4 +1,18 @@
-**Note:** There is a bug with the github DownloadZIP(".map" asset file are Git LFS file, Github DownloadZIP results in the ".map" file only 1KB).  **You should clone this repository by HTTPs or SSH of this git, Not by Github DownloadZIP.**
+# Notes
+
+**Note01:** There is a bug with the github DownloadZIP(".map" asset files are Git LFS files, Github DownloadZIP results in the ".map" file only 1KB).  **You should clone this repository by HTTPs or SSH of this git, Not by Github DownloadZIP.**
+
+
+
+**Note02**: The "**UEGS Model**" is not visible in your project? [This is because the material compiling did not succeed, need to recompile the following material.](https://github.com/YHK-UEPlugins-Public/018_UEGaussianSplatting_Public#this-is-because-the-material-compiling-did-not-succeed-need-to-recompile-the-following-material-1)
+
+```
+/Script/Engine.Material'/UEGaussianSplatting/ASTs/MATs/M_UEGS_GaussianSplatting_Main_Translucent.M_UEGS_GaussianSplatting_Main_Translucent'
+```
+
+**See more**: https://github.com/YHK-UEPlugins-Public/018_UEGaussianSplatting_Public#1-the-uegs-model-is-not-visible
+
+
 
 # Community Communication
 
