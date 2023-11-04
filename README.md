@@ -195,13 +195,13 @@ https://poly.cam/albums
 
 ![image-20231103222704283](README/00_Res/01_Images/image-20231103222704283.png)
 
+## "UEGS" Plugin Instructions
 
+### 1. Clipping Volume: Clip the excess parts of the UEGS model
 
-## Clipping: Clip the excess parts of the UEGS model
+#### Method01: Use the "AUEGaussianSplattingClippingVolume" Volume to Clip the UEGS Model Points(Clipping in this way is achieved by hiding transparent particles, so there is no change in performance)
 
-### Method01: Use the "AUEGaussianSplattingClippingVolume" Volume to Clip the UEGS Model Points(Clipping in this way is achieved by hiding transparent particles, so there is no change in performance)
-
-#### Sample01
+##### Sample01
 
 Before Clipping:
 
@@ -211,7 +211,7 @@ After Clipping:
 
 ![image-20231104151035409](README/00_Res/01_Images/image-20231104151035409.png)
 
-#### Sample02
+##### Sample02
 
 Before Clipping:
 
@@ -221,15 +221,37 @@ After Clipping:
 
 ![image-20231104151908837](README/00_Res/01_Images/image-20231104151908837.png)
 
+### 2. "Build Collision" for "UEGS Asset"
+
+Build Collision:
+
+![image-20231103232311388](README/00_Res/01_Images/image-20231103232311388.png)
+
+Make sure the collision properties(Such as "Collision Presets" Property) are set correctly:
+
+![image-20231103232537340](README/00_Res/01_Images/image-20231103232537340.png)
+
+Show Collision info in the viewport:
+
+![image-20231103232737164](README/00_Res/01_Images/image-20231103232737164.png)
+
+### 3. Double-click a "UEGS" Asset to open its Asset Preview Editor:
+
+![image-20231103232843371](README/00_Res/01_Images/image-20231103232843371.png)
+
 ## Tips Summary
 
-### 1. The "**3D Gaussian Splatting**" file will be imported very quickly into the Content Browser. 
+### 1. Drag the "**.ply**" file into the "Content Browser" of the UE Example Project(With "**UEGaussianSplatting**" plugin Enabled), will auto import the "**.ply**" file as a "UEGS Model" Asset.
+
+The "**3D Gaussian Splatting**" file("**.ply**" file) will be imported very quickly into the Content Browser. 
+
+![image-20231103222704283](README/00_Res/01_Images/image-20231103222704283.png)
 
 Drag this new imported "**3D Gaussian Splatting**" Asset(Or Named "UEGS Asset" or "UEGS Model") into one Level(Or named "Map"). Capture Thumbnail for the "UEGS Asset" if you need.
 
 ![image-20231103223217332](README/00_Res/01_Images/image-20231103223217332.png)
 
-### 2.If the brightness seems too bright in the editor, can adjust the Exposure appropriately
+### 2. If the brightness seems too bright in the editor, can adjust the Exposure appropriately
 
 ![image-20231103223859027](README/00_Res/01_Images/image-20231103223859027.png)
 
@@ -237,13 +259,9 @@ Drag this new imported "**3D Gaussian Splatting**" Asset(Or Named "UEGS Asset" o
 
 ![image-20231103225141818](README/00_Res/01_Images/image-20231103225141818.png)
 
-
-
-### 4.If the frame rate is too low, can appropriately change the "PointSize" in the "UEGS" Actor from the default 9 to a lower value (such as 5, Note: that lowering this value will result in a loss of clarity).
+### 4. If the frame rate is too low, can appropriately change the "PointSize" in the "UEGS" Actor from the default 9 to a lower value (such as 5, Note: that lowering this value will result in a loss of clarity).
 
 ![image-20231103225602917](README/00_Res/01_Images/image-20231103225602917.png)
-
-
 
 ### 5. When the number of  ".ply" asset points is too large, if the display error is caused by the insufficient points budget, can change the "SortUEGaussianSplattingPoints" property from the default 1 to 5 or 10 in "`Project Settings -> UEGaussianSplatting`", which can avoid the display problem caused by the insufficient points budget. 
 
@@ -258,28 +276,6 @@ Such as setting the resolution to "1920x1080, window mode" by console command: "
 ![image-20231103231509519](README/00_Res/01_Images/image-20231103231509519.png)
 
 ![image-20231103231558604](README/00_Res/01_Images/image-20231103231558604.png)
-
-## "UEGS" Plugin Instructions
-
-### 1. "Build Collision" for "UEGS Asset"
-
-Build Collision:
-
-![image-20231103232311388](README/00_Res/01_Images/image-20231103232311388.png)
-
-Make sure the collision properties(Such as "Collision Presets" Property) are set correctly:
-
-![image-20231103232537340](README/00_Res/01_Images/image-20231103232537340.png)
-
-Show Collision info in the viewport:
-
-![image-20231103232737164](README/00_Res/01_Images/image-20231103232737164.png)
-
-
-
-### 2. Double-click a "UEGS" Asset to open its Asset Preview Editor:
-
-![image-20231103232843371](README/00_Res/01_Images/image-20231103232843371.png)
 
 # Issues Fixing
 
