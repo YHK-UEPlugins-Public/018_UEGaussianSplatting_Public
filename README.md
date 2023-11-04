@@ -197,6 +197,32 @@ https://poly.cam/albums
 
 ![image-20231103222704283](README/00_Res/01_Images/image-20231103222704283.png)
 
+
+
+## Clipping: Clip the excess parts of the UEGS model
+
+### Method01: Use the "AUEGaussianSplattingClippingVolume" Volume to Clip the UEGS Model Points(Clipping in this way is achieved by hiding transparent particles, so there is no change in performance)
+
+#### Sample01
+
+Before Clipping:
+
+![image-20231104151704614](README/00_Res/01_Images/image-20231104151704614.png)
+
+After Clipping:
+
+![image-20231104151035409](README/00_Res/01_Images/image-20231104151035409.png)
+
+#### Sample02
+
+Before Clipping:
+
+![image-20231104151820123](README/00_Res/01_Images/image-20231104151820123.png)
+
+After Clipping:
+
+![image-20231104151908837](README/00_Res/01_Images/image-20231104151908837.png)
+
 ## Tips Summary
 
 ### 1. The "**3D Gaussian Splatting**" file will be imported very quickly into the Content Browser. 
