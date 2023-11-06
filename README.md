@@ -14,7 +14,7 @@
 
 # Community Communication
 
-**Discord**: https://discord.gg/kCc8qM3C
+**Discord**: https://discord.gg/z5JGCnEMA
 
 
 
@@ -25,6 +25,8 @@
 > Supports the ".ply" file exported by the 3DGaussianSplatting Editor "**SuperSplat**"
 >
 > **"SuperSplat" Editor**: https://playcanvas.com/super-splat
+>
+> **See more**: https://github.com/YHK-UEPlugins-Public/018_UEGaussianSplatting_Public#updated-versions
 
 
 
