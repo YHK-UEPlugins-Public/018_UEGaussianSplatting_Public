@@ -14,7 +14,7 @@
 
 # Community Communication
 
-**Discord**: https://discord.gg/vdpv7UhynN
+**Discord**: [https://discord.gg/vdpv7UhynN](https://discord.gg/vdpv7UhynN)
 
 
 
