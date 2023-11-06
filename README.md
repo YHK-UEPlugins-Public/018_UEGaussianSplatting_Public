@@ -16,6 +16,18 @@
 
 **Discord**: https://discord.gg/kCc8qM3C
 
+
+
+# Updated versions
+
+## v1.1.0
+
+> Supports the ".ply" file exported by the 3DGaussianSplatting Editor "**SuperSplat**"
+>
+> **"SuperSplat" Editor**: https://playcanvas.com/super-splat
+
+
+
 # Introduce
 
 ## PRODUCT TITLE：
@@ -194,6 +206,26 @@ https://poly.cam/albums
 ### 3. Drag the "**.ply**" file into the "Content Browser" of the UE Example Project(With "**UEGaussianSplatting**" plugin Enabled.)
 
 ![image-20231103222704283](README/00_Res/01_Images/image-20231103222704283.png)
+
+
+
+## Editing the ".ply" File of "3DGaussianSplatting" 
+
+### Method 01: Use the Online Editing Tool "SuperSplat" to edit the ".ply" file of "3DGaussianSplatting" 
+
+**Test File**: https://poly.cam/capture/ba00df8c-5295-4314-b17a-f6227259179b
+
+Get more from: https://poly.cam/explore?feed=splat
+
+![image-20231106102515541](README/00_Res/01_Images/image-20231106102515541.png)
+
+**“SuperSplat” Online Editing Tool**: https://playcanvas.com/super-splat
+
+![image-20231106102429815](README/00_Res/01_Images/image-20231106102429815.png)
+
+After exporting the ".ply" file, **drag** the exported "**.ply**" file into the **ContentBrowser** of UnrealEngine Project(Ensure that the "**UEGaussianSplatting**" plugin is enabled) :
+
+![image-20231106102852714](README/00_Res/01_Images/image-20231106102852714.png)
 
 ## "UEGS" Plugin Instructions
 
