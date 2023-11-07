@@ -26,7 +26,7 @@
 >
 > **"SuperSplat" Editor**: https://playcanvas.com/super-splat
 >
-> **See more**: https://github.com/YHK-UEPlugins-Public/018_UEGaussianSplatting_Public#updated-versions
+> **See more**: https://github.com/YHK-UEPlugins-Public/018_UEGaussianSplatting_Public#editing-the-ply-file-of-3dgaussiansplatting
 
 
 
