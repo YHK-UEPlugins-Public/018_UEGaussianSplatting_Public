@@ -28,7 +28,10 @@
 >
 > **See more**: https://github.com/YHK-UEPlugins-Public/018_UEGaussianSplatting_Public#editing-the-ply-file-of-3dgaussiansplatting
 
+## **v1.1.1:** Submission time(2023-11-09 23:00)
 
+- Optimized performance for transparent points sorting.
+- Improved frame rates for a smoother experience.
 
 # Introduce
 
