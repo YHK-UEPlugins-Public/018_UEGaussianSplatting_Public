@@ -300,9 +300,9 @@ Drag this new imported "**3D Gaussian Splatting**" Asset(Or Named "UEGS Asset" o
 
 ![image-20231103225602917](README/00_Res/01_Images/image-20231103225602917.png)
 
-### 5. When the number of  ".ply" asset points is too large, if the display error is caused by the insufficient points budget, can change the "SortUEGaussianSplattingPoints" property from the default 1 to 5 or 10 in "`Project Settings -> UEGaussianSplatting`", which can avoid the display problem caused by the insufficient points budget. 
+### 5. When the number of  ".ply" asset points is too large, if the display error is caused by the insufficient points budget, can change the "ScaleOfPointBudgetForCurrentFrame" property from the default 1 to 5 or 10 in "`Project Settings -> UEGaussianSplatting`", which can avoid the display problem caused by the insufficient points budget. 
 
-**Note**: Setting a larger points budget value will cost more rendering performance when displaying complex ".ply" asset.
+**Note**: Setting a larger points budget("**ScaleOfPointBudgetForCurrentFrame**" property) value will cost more rendering performance when displaying complex ".ply" asset.
 
 ![image-20231103230208181](README/00_Res/01_Images/image-20231103230208181.png)
 
