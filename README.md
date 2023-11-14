@@ -16,7 +16,9 @@
 
 **Discord**: [https://discord.gg/vdpv7UhynN](https://discord.gg/vdpv7UhynN)
 
+**DemoVideo**:
 
+- **YouTube**: https://youtu.be/4xTEyz9bx5E
 
 # Updated versions
 
@@ -47,6 +49,10 @@
 A high-performance and high-quality 3D Gaussian Splatting real-time rendering plugin for Unreal Engine, Optimized for spatial point data.
 
 ## LONG DESCRIPTION：
+
+**DemoVideo**:
+
+- **YouTube**: https://youtu.be/4xTEyz9bx5E
 
 **Documentation and Example Project:** https://github.com/YHK-UEPlugins-Public/018_UEGaussianSplatting_Public
 
