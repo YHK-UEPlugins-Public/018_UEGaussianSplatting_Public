@@ -14,7 +14,7 @@
 
 
 
-**Note03**: Any "**Package Project**" issues can  refer to this document section: 
+**Note03**: Any "**Package Project**" issues can  refer to this document section: "**Package Project" issues**"-> https://github.com/YHK-UEPlugins-Public/018_UEGaussianSplatting_Public#4-package-project-issues
 
 
 
@@ -289,6 +289,14 @@ Show Collision info in the viewport:
 ![image-20231103232843371](README/00_Res/01_Images/image-20231103232843371.png)
 
 ## Tips Summary
+
+### 0. In order to avoid the performance consumption caused by translucent particle points sorting(especially when turning to a certain viewing angle, there will be a certain frame rate jitter or delayed model effect refresh), you can try to turn off the "SortUEGaussianSplattingPoints" option. Then set all UEGS model materials to "Masked" type materials. Or keep the "SortUEGaussianSplattingPoints" option to true and just set the materials of part of the UEGS models to the "Masked" type. UEGS Models with "Masked" type materials will not sort translucent particle points , improving certain performance. 
+
+**Note**: When the "**SortUEGaussianSplattingPoints**" option is false, the newly dragged UEGS models into the scene will use the "Masked" type material by default.
+
+![image-20231116233642290](README/00_Res/01_Images/image-20231116233642290.png)
+
+![image-20231116233609817](README/00_Res/01_Images/image-20231116233609817.png)
 
 ### 1. Drag the "**.ply**" file into the "Content Browser" of the UE Example Project(With "**UEGaussianSplatting**" plugin Enabled), will auto import the "**.ply**" file as a "UEGS Model" Asset.
 
