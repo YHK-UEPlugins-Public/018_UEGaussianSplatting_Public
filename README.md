@@ -10,6 +10,12 @@
 
 **See more**: https://github.com/YHK-UEPlugins-Public/018_UEGaussianSplatting_Public#1-the-uegs-model-is-not-visible
 
+**NOTE**: This issue is **fixed** in the Version 1.1.3 of this plugin.
+
+
+
+**Note03**: Any "**Package Project**" issues can  refer to this document section: 
+
 
 
 # Community Communication
@@ -174,7 +180,7 @@ Copy it to the "**Plugins**" folder of this Example Project:
 
 ### 6. If the The "UEGS Model" is not visible, should recompile the following material:
 
-### This is because the material compiling did not succeed, need to recompile the following material.
+### This is because the material compiling did not succeed, need to recompile the following material. **NOTE**: This issue is **fixed** in the Version 1.1.3 of this plugin.
 
 `/Script/Engine.Material'/UEGaussianSplatting/ASTs/MATs/M_UEGS_GaussianSplatting_Main_Translucent.M_UEGS_GaussianSplatting_Main_Translucent'`
 
@@ -353,6 +359,50 @@ After modification, the brightness effect behaves normally:
 ## 3. Occasionally a little bit of frame rate drop when changing the Angle of view or moving a certain distance? This is a known issue, and further performance optimizations are underway.
 
 This is due to the fact that translucent particles need to be sorted, and this operation is very performance consuming when the points number is too large. So currently, translucent particles are sorted only after the Angle of view is rotated by a certain Angle or moved by a certain distance. Performance will be further optimized later to avoid the occasional drop in frame rate.
+
+
+
+## 4. "Package Project" issues
+
+
+
+### 4.1 When packaging and building the project, if the following errors appear: "`Assertion failed: DataResource.SerialSize == DataResource.RawSize` " and "`Compressed bulk data is not supported in cooked builds`". You need to set "**Use Io Store**" in "**ProjectSettings->Packaging**" to **false** and then repackage.
+
+![image-20231116222104321](README/00_Res/01_Images/image-20231116222104321.png)
+
+```ini
+UATHelper: Packaging (Windows): LogIoStore: Display: Packages read 3,695 files in 0.03 seconds, 4,799,826 total bytes, 162,498,848 bytes per second
+UATHelper: Packaging (Windows): LogWindows: Error: appError called: Assertion failed: DataResource.SerialSize == DataResource.RawSize [File:D:\01_YHK\03_Dev\03_GH\Epic\UnrealEngine\Engine\Source\Developer\IoStoreUtilities\Private\PackageStoreOptimizer.cpp] [Line: 559]
+UATHelper: Packaging (Windows): Compressed bulk data is not supported in cooked builds
+UATHelper: Packaging (Windows): LogWindows: Error: === Critical error: ===
+UATHelper: Packaging (Windows): LogWindows: Error:
+UATHelper: Packaging (Windows): LogWindows: Error: Assertion failed: DataResource.SerialSize == DataResource.RawSize [File:D:\01_YHK\03_Dev\03_GH\Epic\UnrealEngine\Engine\Source\Developer\IoStoreUtilities\Private\PackageStoreOptimizer.cpp] [Line: 559]
+UATHelper: Packaging (Windows): LogWindows: Error: Compressed bulk data is not supported in cooked builds
+UATHelper: Packaging (Windows): LogWindows: Error: [Callstack] 0x00007ff85ce9336b UnrealPak-IoStoreUtilities.dll!`ParsePackageAssetsFromFiles'::`58'::<lambda_2>::operator()() [D:\01_YHK\03_Dev\03_GH\Epic\UnrealEngine\Engine\Source\Developer\IoStoreUtilities\Private\IoStoreUtilities.cpp:1781]
+UATHelper: Packaging (Windows): LogWindows: Error: [Callstack] 0x00007ff85ce97062 UnrealPak-IoStoreUtilities.dll!`ParallelForImpl::ParallelForInternal<TFunctionRef<void __cdecl(int)>,`ParallelFor'::`2'::<lambda_1>,std::nullptr_t>'::`2'::FParallelExecutor::operator()() [D:\01_YHK\03_Dev\03_GH\Epic\UnrealEngine\Engine\Source\Runtime\Core\Public\Async\ParallelFor.h:116]
+UATHelper: Packaging (Windows): LogWindows: Error: [Callstack] 0x00007ff85ce7db39 UnrealPak-IoStoreUtilities.dll!ParallelForImpl::ParallelForInternal<TFunctionRef<void __cdecl(int)>,`ParallelFor'::`2'::<lambda_1>,std::nullptr_t>() [D:\01_YHK\03_Dev\03_GH\Epic\UnrealEngine\Engine\Source\Runtime\Core\Public\Async\ParallelFor.h:415]
+UATHelper: Packaging (Windows): LogWindows: Error: [Callstack] 0x00007ff85ced6cb1 UnrealPak-IoStoreUtilities.dll!ParallelFor() [D:\01_YHK\03_Dev\03_GH\Epic\UnrealEngine\Engine\Source\Runtime\Core\Public\Async\ParallelFor.h:501]
+UATHelper: Packaging (Windows): LogWindows: Error: [Callstack] 0x00007ff85ced9805 UnrealPak-IoStoreUtilities.dll!ParsePackageAssetsFromFiles() [D:\01_YHK\03_Dev\03_GH\Epic\UnrealEngine\Engine\Source\Developer\IoStoreUtilities\Private\IoStoreUtilities.cpp:1800]
+UATHelper: Packaging (Windows): LogWindows: Error: [Callstack] 0x00007ff85ceb0b1d UnrealPak-IoStoreUtilities.dll!CreateTarget() [D:\01_YHK\03_Dev\03_GH\Epic\UnrealEngine\Engine\Source\Developer\IoStoreUtilities\Private\IoStoreUtilities.cpp:3852]
+UATHelper: Packaging (Windows): LogWindows: Error: [Callstack] 0x00007ff85cead5ff UnrealPak-IoStoreUtilities.dll!CreateIoStoreContainerFiles() [D:\01_YHK\03_Dev\03_GH\Epic\UnrealEngine\Engine\Source\Developer\IoStoreUtilities\Private\IoStoreUtilities.cpp:7883]
+UATHelper: Packaging (Windows): LogWindows: Error: [Callstack] 0x00007ff85de17be3 UnrealPak-PakFileUtilities.dll!ExecuteUnrealPak() [D:\01_YHK\03_Dev\03_GH\Epic\UnrealEngine\Engine\Source\Developer\PakFileUtilities\Private\PakFileUtilities.cpp:5458]
+UATHelper: Packaging (Windows): LogWindows: Error: [Callstack] 0x00007ff6563b16f2 UnrealPak.exe!wmain() [D:\01_YHK\03_Dev\03_GH\Epic\UnrealEngine\Engine\Source\Programs\UnrealPak\Private\UnrealPak.cpp:19]
+UATHelper: Packaging (Windows): LogWindows: Error: [Callstack] 0x00007ff6563b20b8 UnrealPak.exe!__scrt_common_main_seh() [D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288]
+UATHelper: Packaging (Windows): LogWindows: Error: [Callstack] 0x00007ff8ab44257d KERNEL32.DLL!UnknownFunction []
+UATHelper: Packaging (Windows): LogWindows: Error: [Callstack] 0x00007ff8ac12aa78 ntdll.dll!UnknownFunction []
+UATHelper: Packaging (Windows): LogWindows: Error:
+UATHelper: Packaging (Windows): LogWindows: Error:
+UATHelper: Packaging (Windows): LogWindows: Error:
+UATHelper: Packaging (Windows): LogWindows: Error:
+```
+
+#### Solution: Set "**Use Io Store**" in "ProjectSettings->Packaging" to false, and then repackage.
+
+![image-20231116222413924](README/00_Res/01_Images/image-20231116222413924.png)
+
+### 4.2 If after packaging, the model or material is not visible, or the material appears as the default material. Please make sure to update the plugin version to v1.1.3 or above.
+
+
 
 # GALLERY
 
