@@ -10,7 +10,7 @@
 
 **See more**: https://github.com/YHK-UEPlugins-Public/018_UEGaussianSplatting_Public#1-the-uegs-model-is-not-visible
 
-**NOTE**: This issue is **fixed** in the Version 1.1.3 of this plugin.
+**NOTE**: This issue is **fixed** in the Version 1.1.2 of this plugin.
 
 
 
@@ -180,7 +180,7 @@ Copy it to the "**Plugins**" folder of this Example Project:
 
 ### 6. If the The "UEGS Model" is not visible, should recompile the following material:
 
-### This is because the material compiling did not succeed, need to recompile the following material. **NOTE**: This issue is **fixed** in the Version 1.1.3 of this plugin.
+### This is because the material compiling did not succeed, need to recompile the following material. **NOTE**: This issue is **fixed** in the Version 1.1.2 of this plugin.
 
 `/Script/Engine.Material'/UEGaussianSplatting/ASTs/MATs/M_UEGS_GaussianSplatting_Main_Translucent.M_UEGS_GaussianSplatting_Main_Translucent'`
 
@@ -408,7 +408,7 @@ UATHelper: Packaging (Windows): LogWindows: Error:
 
 ![image-20231116222413924](README/00_Res/01_Images/image-20231116222413924.png)
 
-### 4.2 If after packaging, the model or material is not visible, or the material appears as the default material. Please make sure to update the plugin version to v1.1.3 or above.
+### 4.2 If after packaging, the model or material is not visible, or the material appears as the default material. Please make sure to update the plugin version to v1.1.2 or above.
 
 
 
