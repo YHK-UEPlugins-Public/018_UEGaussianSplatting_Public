@@ -41,6 +41,18 @@
 - Optimized performance for transparent points sorting.
 - Improved frame rates for a smoother experience.
 
+## **v1.1.2:** Submission time(2023-11-16 23:30)
+
+- Optimized performance for transparent points sorting.
+
+- Improved frame rates for a smoother experience.
+
+- Fixed "Package Project" Issues. Fixed Packaged Materials not visible(Compiling Issue).  **See more**: "**Package Project" issues**"-> https://github.com/YHK-UEPlugins-Public/018_UEGaussianSplatting_Public#4-package-project-issues
+
+- Updated:  "Masked" type material supporting. Avoid frame rate fluctuations when rotating a certain viewing angle caused by translucent particle sorting. **See more**: https://shorturl.at/fCNX2
+
+  
+
 # Introduce
 
 ## PRODUCT TITLE：
