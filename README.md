@@ -308,7 +308,13 @@ Show Collision info in the viewport:
 
 ![image-20231116233642290](README/00_Res/01_Images/image-20231116233642290.png)
 
+**Masked Type Material:** `/Script/Engine.Material'/UEGaussianSplatting/ASTs/MATs/M_UEGS_GaussianSplatting_Main_Masked.M_UEGS_GaussianSplatting_Main_Masked'`
+
 ![image-20231116233609817](README/00_Res/01_Images/image-20231116233609817.png)
+
+#### **Note:** In order to make the Masked type translucency effect appear better, it is best to set the "Anti-Aliasing Method" to TAA.
+
+![image-20231117230426355](README/00_Res/01_Images/image-20231117230426355.png)
 
 ### 1. Drag the "**.ply**" file into the "Content Browser" of the UE Example Project(With "**UEGaussianSplatting**" plugin Enabled), will auto import the "**.ply**" file as a "UEGS Model" Asset.
 
