@@ -302,7 +302,7 @@ Show Collision info in the viewport:
 
 ## Tips Summary
 
-### 0. In order to avoid the performance consumption caused by translucent particle points sorting(especially when turning to a certain viewing angle, there will be a certain frame rate jitter or delayed model effect refresh), you can try to turn off the "SortUEGaussianSplattingPoints" option. Then set all UEGS model materials to "Masked" type materials. Or keep the "SortUEGaussianSplattingPoints" option to true and just set the materials of part of the UEGS models to the "Masked" type. UEGS Models with "Masked" type materials will not sort translucent particle points , improving certain performance. 
+### 0. In order to avoid the performance consumption caused by translucent particle points sorting(especially when turning to a certain viewing angle, there will be a certain frame rate jitter or delayed model effect refresh), you can try to turn off the "SortUEGaussianSplattingPoints" option. Then set all UEGS model materials to "Masked" type materials. Or keep the "SortUEGaussianSplattingPoints" option to true and just set the materials of part of the UEGS models to the "Masked" type. UEGS Models with "Masked" type materials will not sort translucent particle points , improving certain performance. More see next Tip.
 
 **Note**: When the "**SortUEGaussianSplattingPoints**" option is false, the newly dragged UEGS models into the scene will use the "Masked" type material by default.
 
@@ -316,7 +316,33 @@ Show Collision info in the viewport:
 
 ![image-20231117230426355](README/00_Res/01_Images/image-20231117230426355.png)
 
-### 1. Drag the "**.ply**" file into the "Content Browser" of the UE Example Project(With "**UEGaussianSplatting**" plugin Enabled), will auto import the "**.ply**" file as a "UEGS Model" Asset.
+### 1. Because sorting translucent particle points consumes performance. Therefore, a sorting operation will be performed only after a certain rotation angle(AngleThreahold) or movement distance(DistanceThreshold) and a certain time interval(TimeIntervalThreshold). There will be a certain frame rate jitter or delayed model effect refresh. However, you can avoid this problem by setting the following 3 properties to 0.0(Frame rate jitter or Delayed model effect refresh).
+
+Try to set the following 3 properties to 0.0.
+
+**ScaleOfAngleThreaholdForSorting**
+
+> This is the Scale value of AngleThreahold. When this is 1.0, the AngleThreahold is about 17 Degree.
+>
+> Set this to 0.0, will ignore this condition. If the above three conditions are ignored, the sorting will take place in each frame.
+
+**ScaleOfDistanceThresholdForSorting**
+
+> This is the Scale value of DistanceThreshold. When this is 1.0, the DistanceThreshold is about "BoundBoxExtent.GetMax() / 20.0"(If it is less than 50, take 50).
+>
+> "BoundBoxExtent.GetMax()" is the max bound radius of UEGS Model.
+>
+> Set this to 0.0, will ignore this condition. If the above three conditions are ignored, the sorting will take place in each frame.
+
+**ScaleOfTimeIntervalThresholdForSorting**
+
+> This is the Scale value of TimeIntervalThreshold. When this is 1.0, the TimeIntervalThreshold is about 0.5s.
+>
+> Set this to 0.0, will ignore this condition. If the above three conditions are ignored, the sorting will take place in each frame.
+
+![image-20231117233356782](README/00_Res/01_Images/image-20231117233356782.png)
+
+### 2. Drag the "**.ply**" file into the "Content Browser" of the UE Example Project(With "**UEGaussianSplatting**" plugin Enabled), will auto import the "**.ply**" file as a "UEGS Model" Asset.
 
 The "**3D Gaussian Splatting**" file("**.ply**" file) will be imported very quickly into the Content Browser. 
 
@@ -326,31 +352,35 @@ Drag this new imported "**3D Gaussian Splatting**" Asset(Or Named "UEGS Asset" o
 
 ![image-20231103223217332](README/00_Res/01_Images/image-20231103223217332.png)
 
-### 2. If the brightness seems too bright in the editor, can adjust the Exposure appropriately
+### 3. If the brightness seems too bright in the editor, can adjust the Exposure appropriately
 
 ![image-20231103223859027](README/00_Res/01_Images/image-20231103223859027.png)
 
-### 3. If the overall clarity of the image is not enough, can appropriately increase the value of "ScreenPercentage"; If the frame rate is too low, you can lower the value of "ScreenPercentage" appropriately.
+### 4. If the overall clarity of the image is not enough, can appropriately increase the value of "ScreenPercentage"; If the frame rate is too low, you can lower the value of "ScreenPercentage" appropriately.
 
 ![image-20231103225141818](README/00_Res/01_Images/image-20231103225141818.png)
 
-### 4. If the frame rate is too low, can appropriately change the "PointSize" in the "UEGS" Actor from the default 9 to a lower value (such as 5, Note: that lowering this value will result in a loss of clarity).
+### 5. If the frame rate is too low, can appropriately change the "PointSize" in the "UEGS" Actor from the default 9 to a lower value (such as 5, Note: that lowering this value will result in a loss of clarity).
 
 ![image-20231103225602917](README/00_Res/01_Images/image-20231103225602917.png)
 
-### 5. When the number of  ".ply" asset points is too large, if the display error is caused by the insufficient points budget, can change the "ScaleOfPointBudgetForCurrentFrame" property from the default 1 to 5 or 10 in "`Project Settings -> UEGaussianSplatting`", which can avoid the display problem caused by the insufficient points budget. 
+### 6. When the number of  ".ply" asset points is too large, if the display error is caused by the insufficient points budget, can change the "ScaleOfPointBudgetForCurrentFrame" property from the default 1 to 5 or 10 in "`Project Settings -> UEGaussianSplatting`", which can avoid the display problem caused by the insufficient points budget. 
 
 **Note**: Setting a larger points budget("**ScaleOfPointBudgetForCurrentFrame**" property) value will cost more rendering performance when displaying complex ".ply" asset.
 
 ![image-20231103230208181](README/00_Res/01_Images/image-20231103230208181.png)
 
-### 6. Running the Game in "Standalone Game" mode will result in a higher frame rate than running it directly in the editor. Properly set the screen resolution, can get a more appropriate frame rate.
+### 7. Running the Game in "Standalone Game" mode will result in a higher frame rate than running it directly in the editor. Properly set the screen resolution, can get a more appropriate frame rate.
 
 Such as setting the resolution to "1920x1080, window mode" by console command: "`r.setres 1920x1080 w`"
 
 ![image-20231103231509519](README/00_Res/01_Images/image-20231103231509519.png)
 
 ![image-20231103231558604](README/00_Res/01_Images/image-20231103231558604.png)
+
+
+
+
 
 # Issues Fixing
 
