@@ -314,11 +314,13 @@ Show Collision info in the viewport:
 
 #### **Note:** In order to make the Masked type translucency effect appear better, it is best to set the "Anti-Aliasing Method" to TAA.
 
+TAA is only required if a Masked type material is used to simulate translucent, which is generally not the case(generally it is normal translucent materal, not a masked type material) unless you have specifically specified a Masked type material in the Properties panel of UEGS model.
+
 ![image-20231117230426355](README/00_Res/01_Images/image-20231117230426355.png)
 
-### 1. Because sorting translucent particle points consumes performance. Therefore, a sorting operation will be performed only after a certain rotation angle(AngleThreahold) or movement distance(DistanceThreshold) and a certain time interval(TimeIntervalThreshold). There will be a certain frame rate jitter or delayed model effect refresh. However, you can avoid this problem by setting the following 3 properties to 0.0(Frame rate jitter or Delayed model effect refresh).
+### 1. Because sorting translucent particle points consumes performance. Therefore, a sorting operation will be performed only after a certain rotation angle(AngleThreahold) or movement distance(DistanceThreshold) and a certain time interval(TimeIntervalThreshold). There will be a certain frame rate jitter or delayed model effect refresh. However, you can avoid this problem(Frame rate jitter or Delayed model effect refresh) by setting the following 3 properties to 0.
 
-Try to set the following 3 properties to 0.0.
+Try to set the following 3 properties to 0.
 
 **ScaleOfAngleThreaholdForSorting**
 
