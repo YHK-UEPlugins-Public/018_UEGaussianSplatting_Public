@@ -10,7 +10,7 @@
 
 **See more**: https://github.com/YHK-UEPlugins-Public/018_UEGaussianSplatting_Public#1-the-uegs-model-is-not-visible
 
-**NOTE**: This issue is **fixed** in the Version 1.1.2 of this plugin.
+**NOTE**: This issue is **fixed** in the Version **v1.1.2** of this plugin.
 
 
 
@@ -387,6 +387,8 @@ Such as setting the resolution to "1920x1080, window mode" by console command: "
 # Issues Fixing
 
 ## 1. The "UEGS Model" is not visible?
+
+Note: The model or material is not visible, or the material appears as the default material. This issue is **fixed** in the Version **v1.1.2** of this plugin. Please make sure to update the plugin version to **v1.1.2** or above.
 
 ### This is because the material compiling did not succeed, need to recompile the following material.
 
