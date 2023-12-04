@@ -8,9 +8,8 @@
 
 > /Script/Engine.Material'/UEGaussianSplatting/ASTs/MATs/M_UEGS_GaussianSplatting_Main_Translucent.M_UEGS_GaussianSplatting_Main_Translucent'
 
+**Notice**: This issue is **fixed** in the Version **v1.1.2** of this plugin.
 **See more**: https://github.com/YHK-UEPlugins-Public/018_UEGaussianSplatting_Public#1-the-uegs-model-is-not-visible
-
-**NOTE**: This issue is **fixed** in the Version **v1.1.2** of this plugin.
 
 
 
@@ -20,11 +19,13 @@
 
 # Community Communication
 
-**Discord(Add Friend)**: YeHaike
+**Add Discord.com Friend**: **YeHaike**
 
 **DemoVideo**:
 
 - **YouTube**: https://youtu.be/4xTEyz9bx5E
+
+**Get this Plugin from UE Marketplace:** https://www.unrealengine.com/marketplace/en-US/product/uegaussiansplatting-3d-gaussian-splatting-rendering-feature-for-ue
 
 # Updated versions
 
