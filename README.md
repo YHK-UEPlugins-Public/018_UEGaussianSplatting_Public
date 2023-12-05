@@ -463,7 +463,15 @@ UATHelper: Packaging (Windows): LogWindows: Error:
 
 ### 4.2 If after packaging, the model or material is not visible, or the material appears as the default material. Please make sure to update the plugin version to v1.1.2 or above.
 
+## 5. Fixed: Translucent materials not displaying DOF(Depth Of Field) effect correctly
 
+**01**: When using translucent materials, it is necessary to ensure that the material’s “**Translucency Pass**” property is set to "**Before DOF**" in order to correctly display the DOF effect on that material.
+
+![image-20231205221113852](README/00_Res/01_Images/image-20231205221113852.png)
+
+**02**: Also, make sure that the “**Separate Translucency**” property in the "**Project Settings->Engine->Rendering**" is set to **true**.
+
+![image-20231205221324107](README/00_Res/01_Images/image-20231205221324107.png)
 
 # GALLERY
 
