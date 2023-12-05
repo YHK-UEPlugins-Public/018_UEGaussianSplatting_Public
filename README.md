@@ -465,9 +465,17 @@ UATHelper: Packaging (Windows): LogWindows: Error:
 
 ## 5. Fixed: Translucent materials not displaying DOF(Depth Of Field) effect correctly
 
-**01**: When using translucent materials, it is necessary to ensure that the material’s “**Translucency Pass**” property is set to "**Before DOF**" in order to correctly display the DOF effect on that material.
+**01**: When using translucent materials, it is necessary to ensure that the material’s “**Translucency Pass**” property is set to "**Before DOF**" in order to correctly display the DOF effect on that material. And set the "**Out Depth and Velocity**" property to **true**.
+
+**Translucent Material Path of this Plugin**(In the Content Folder of "UEGaussianSplatting" Plugin): `'/UEGaussianSplatting/ASTs/MATs/M_UEGS_GaussianSplatting_Main_Translucent`'
+
+“**Translucency Pass**” : "**Before DOF**"
 
 ![image-20231205221113852](README/00_Res/01_Images/image-20231205221113852.png)
+
+"**Out Depth and Velocity**": True
+
+![image-20231205223057903](README/00_Res/01_Images/image-20231205223057903.png)
 
 **02**: Also, make sure that the “**Separate Translucency**” property in the "**Project Settings->Engine->Rendering**" is set to **true**.
 
