@@ -481,6 +481,26 @@ UATHelper: Packaging (Windows): LogWindows: Error:
 
 ![image-20231205221324107](README/00_Res/01_Images/image-20231205221324107.png)
 
+## 6. In our materials, there’s a translucency threshold, set by default to 0.02, which might cause a pronounced boundary outline effect on larger Gaussian ellipses
+
+In our materials, we actually have a translucency threshold filter that’s used to filter out pixels with translucency values below a certain threshold, with the default value being 0.02. This can make the overall model look clearer, but for some very large single Gaussian ellipses, this might result in a noticeable outline at the edge of the ellipse’s gradient
+
+**You can lower this value, for instance, to 0.00, to avoid the pronounced outline effect on large Gaussian ellipses.**
+
+**Material**: `/Script/Engine.Material'/UEGaussianSplatting/ASTs/MATs/M_UEGS_GaussianSplatting_Main_Translucent.M_UEGS_GaussianSplatting_Main_Translucent'`
+
+![image-20231207211651180](README/00_Res/01_Images/image-20231207211651180.png)
+
+**OpacityClipThreshold**: 0.02
+
+![image-20231207212041687](README/00_Res/01_Images/image-20231207212041687.png)
+
+![image-20231207212236238](README/00_Res/01_Images/image-20231207212236238.png)
+
+**OpacityClipThreshold**: 0.00
+
+![image-20231207212116462](README/00_Res/01_Images/image-20231207212116462.png)
+
 # GALLERY
 
 ![000_GALLERY_01](README/00_Res/01_Images/000_GALLERY_01.jpg)
