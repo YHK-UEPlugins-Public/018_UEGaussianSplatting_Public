@@ -367,6 +367,15 @@ Drag this new imported "**3D Gaussian Splatting**" Asset(Or Named "UEGS Asset" o
 
 ![image-20231103225602917](README/00_Res/01_Images/image-20231103225602917.png)
 
+Here is a test comparison: the number of points on this car is very high, resulting in a lower frame rate when the **PointSize** is set to 9 (the default value). By changing the **PointSize** value to 4, there is no significant loss in quality, but the frame rate is noticeably improved.
+**PointSize**: 9(Default Value)
+
+![image-20231207214812242](README/00_Res/01_Images/image-20231207214812242.png)
+
+**PointSize**: 4
+
+![image-20231207214739878](README/00_Res/01_Images/image-20231207214739878.png)
+
 ### 6. When the number of  ".ply" asset points is too large, if the display error is caused by the insufficient points budget, can change the "ScaleOfPointBudgetForCurrentFrame" property from the default 1 to 5 or 10 in "`Project Settings -> UEGaussianSplatting`", which can avoid the display problem caused by the insufficient points budget. 
 
 **Note**: Setting a larger points budget("**ScaleOfPointBudgetForCurrentFrame**" property) value will cost more rendering performance when displaying complex ".ply" asset.
