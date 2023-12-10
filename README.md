@@ -29,6 +29,8 @@
 
 # Updated versions
 
+**Note**: The Unreal Engine official team will take 1 to 2 days to review the update, so the latest version will be available for download 1 to 2 days after the submission time.
+
 ## v1.1.0
 
 > Supports the ".ply" file exported by the 3DGaussianSplatting Editor "**SuperSplat**"
@@ -52,7 +54,13 @@
 
 - Updated:  "Masked" type material supporting. Avoid frame rate fluctuations when rotating a certain viewing angle caused by translucent particle sorting. **See more**: https://shorturl.at/fCNX2
 
-  
+
+## **v1.1.3:** Submission time(2023-12-10 20:30)
+
+- **Optimization**: Performance Optimization. Significantly further optimized the overall performance related to translucent particle sorting.
+- **Adjustment**: “PointSize” Adjustment. Changed the default value from  9 to 5, to optimize the rendering performance of translucent particles.
+- **Fixed**: Bug related to the Actor’s Scale.
+- **New**: Added debug print log options(LOG, WARNING, ERROR) in the plugin settings.
 
 # Introduce
 
