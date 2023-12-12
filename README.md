@@ -400,7 +400,46 @@ Such as setting the resolution to "1920x1080, window mode" by console command: "
 
 
 
+## Clarity Enhancement: How to Improve the Clarity of UEGS Models in the Scene
 
+### 01 If you find that the UEGS models become clearer when you change the scene’s lighting mode from "Lit" to "Unlit", you can try the following methods to improve clarity:
+
+![image-20231212230344429](README/00_Res/01_Images/image-20231212230344429.png)
+
+#### 1. Change the "Anti-Aliasing Method" to "FXAA".
+
+ It is recommended to use "**FXAA**" anti-aliasing instead of "TAA" or "TSR" anti-aliasing to avoid the slight jitter of translucent particles in Lit mode scenes, which can reduce clarity.
+
+When the lighting in the scene is set to "Lit" mode, the impact of the anti-aliasing method chosen in the "Anti-Aliasing Method" option on the clarity of translucent particles is as follows (the closer to the former, the clearer):
+`None > FXAA > TAA > TSR`
+
+**Note**: "MSAA" is only applicable to Forward Shading. For the Deferred Shading rendering pipeline (the default rendering pipeline in UE), "MSAA" settings are ineffective and equivalent to the "None" anti-aliasing setting.
+
+![image-20231212230011096](README/00_Res/01_Images/image-20231212230011096.png)
+
+#### 2. Disable "Motion Blur" of the post-processing.
+
+Enabling "Motion Blur" in post-processing can cause slight blurring of translucent particles. Therefore, you can try disabling "Motion Blur" to enhance clarity.
+
+Besides turning off "Motion Blur" from "Project Settings", you can also try disabling "Motion Blur" through "post-processing volume".
+
+If there is no "post-processing volume", you can add a new "post-processing volume". Set its "**Infinite Extent (Unbound)**" property to **true**. 
+
+![image-20231212231733737](README/00_Res/01_Images/image-20231212231733737.png)
+
+Then set the "**Amount**" of "**Motion Blur**" to **0** to turn off "Motion Blur".
+
+![image-20231212232014944](README/00_Res/01_Images/image-20231212232014944.png)
+
+#### 3. Disable the "Tonemapper" of post-processing.
+
+"Tonemapper": It may slightly alter the brightness of translucent particles, leading to minor inconsistencies with the original effect. The impact on clarity is very subtle. You can decide whether to turn off the "Tonemapper" based on the specific situation.
+
+**Disable** "**Tonemapper**" by console command: "`ShowFlag.Tonemapper 0`"
+![image-20231212233545375](README/00_Res/01_Images/image-20231212233545375.png)
+
+**Note**: the default value of "Tonemapper" is **2**.
+![image-20231212233634118](README/00_Res/01_Images/image-20231212233634118.png)
 
 # Issues Fixing
 
