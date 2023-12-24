@@ -66,6 +66,8 @@
 
 - **New**: "**Pixel Clipping**"("**Pixel-Level Clipping**") functionality for individual UEGS model(3DGS Model). Each UEGS model(3DGS Model) supports a "**Pixel-Level Clipping**" region of either Box or Sphere type.
 
+  **See More**: https://github.com/YHK-UEPlugins-Public/018_UEGaussianSplatting_Public?tab=readme-ov-file#0-pixel-clippingpixel-level-clipping-in-v120-of-this-plugin-added-a-new-feature-named-pixel-level-clippingpixel-level-clipping-functionality-for-individual-uegs-model3dgs-model-each-uegs-model3dgs-model-supports-a-pixel-level-clipping-region-of-either-box-or-sphere-type
+
 # Introduce
 
 ## PRODUCT TITLE：
