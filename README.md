@@ -62,6 +62,10 @@
 - **Fixed**: Bug related to the Actor’s Scale.
 - **New**: Added debug print log options(LOG, WARNING, ERROR) in the plugin settings.
 
+## **v1.2.0:** Submission time(2023-12-24 20:00)
+
+- **New**: "**Pixel Clipping**"("**Pixel-Level Clipping**") functionality for individual UEGS model(3DGS Model). Each UEGS model(3DGS Model) supports a "**Pixel-Level Clipping**" region of either Box or Sphere type.
+
 # Introduce
 
 ## PRODUCT TITLE：
@@ -266,6 +270,36 @@ After exporting the ".ply" file, **drag** the exported "**.ply**" file into the 
 ![image-20231106102852714](README/00_Res/01_Images/image-20231106102852714.png)
 
 ## "UEGS" Plugin Instructions
+
+### 0. "Pixel Clipping"("Pixel-Level Clipping"): In v1.2.0 of this plugin, added a new feature named "Pixel-Level Clipping"("Pixel-Level Clipping" functionality for individual UEGS model(3DGS Model)). Each UEGS model(3DGS Model) supports a "Pixel-Level Clipping" region of either Box or Sphere type.
+
+"**Example Map**": "`/Game/UEGSDemo/MAPs/MAP_UEGSDemo_Overview_01_AllTranslucent`"
+
+"**EnablePixelClipping**":  When enabled, this "Pixel-Level Clipping" feature will be activated.
+
+![image-20231224195343137](README/00_Res/01_Images/image-20231224195343137.png)
+
+"**ShowClippingShape**": if is false, Clipping Shape will not be visible.
+
+![image-20231224200622926](README/00_Res/01_Images/image-20231224200622926.png)
+
+"**ClippingTransform**": Transform of Clipping Shape. 
+**Note01**: When "**double-clicking**" on the selected UEGS Actor, a ”3D Widget“ will be displayed in the viewport for this “ClippingTransform” property. This ”3D Widget“ can be moved, rotated, or scaled(Press the "Space Bar" on the keyboard to switch) to adjust the value of this “ClippingTransform” property.
+**Note02**: If "ClippingShape" is Sphere, only the X component in the Scale of this Transform will be used. Therefore, in this case, to scale the size of the sphere, you need to adjust the 3D Widget's X axis for scaling.
+
+![image-20231224195511141](README/00_Res/01_Images/image-20231224195511141.png)
+
+![image-20231224195629727](README/00_Res/01_Images/image-20231224195629727.png)
+
+"**ClippingShape**": Currently supports Box shape or Sphere shape.
+
+![image-20231224195202668](README/00_Res/01_Images/image-20231224195202668.png)
+
+![image-20231224195408744](README/00_Res/01_Images/image-20231224195408744.png)
+
+"**ClippingRangeType**": if it is "**Internal**", will clip the pixels inside the Shape; if it is "**External**", will clip all the pixels outside the Shape.
+
+![image-20231224195441231](README/00_Res/01_Images/image-20231224195441231.png)
 
 ### 1. Clipping Volume: Clip the excess parts of the UEGS model
 
