@@ -593,6 +593,10 @@ In our materials, we actually have a translucency threshold filter that’s used
 
 ![image-20231207212116462](README/00_Res/01_Images/image-20231207212116462.png)
 
+## 7.If you find that after adding the UEGaussianSplatting component as a component to another Actor and specifying the UEGS model, the component does not display the UEGS model, you can try to save the current level and then reopen the level to display the UEGS model
+
+![image-20240116210441842](README/00_Res/01_Images/image-20240116210441842.png)
+
 # GALLERY
 
 ![000_GALLERY_01](README/00_Res/01_Images/000_GALLERY_01.jpg)
