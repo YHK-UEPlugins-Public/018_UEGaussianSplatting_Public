@@ -453,11 +453,17 @@ When the lighting in the scene is set to "Lit" mode, the impact of the anti-alia
 
 ![image-20231212230011096](README/00_Res/01_Images/image-20231212230011096.png)
 
-#### 2. Disable "Motion Blur" of the post-processing.
+#### 2. Disable "Motion Blur" of the post-processing: Fix **Slight Blurring** and **Slight Flickering** of translucent particles
 
-Enabling "Motion Blur" in post-processing can cause slight blurring of translucent particles. Therefore, you can try disabling "Motion Blur" to enhance clarity.
+Enabling "Motion Blur" in post-processing can cause **Slight Blurring** and **Slight Flickering** of translucent particles. Therefore, you can try disabling "Motion Blur" to enhance clarity.
 
-Besides turning off "Motion Blur" from "Project Settings", you can also try disabling "Motion Blur" through "post-processing volume".
+![image-20240128164329704](README/00_Res/01_Images/image-20240128164329704.png)
+
+**Method01: Turning off "Motion Blur" from "Project Settings"**
+
+![image-20240128164550015](README/00_Res/01_Images/image-20240128164550015.png)
+
+**Method02: Besides turning off "Motion Blur" from "Project Settings", you can also try disabling "Motion Blur" through "post-processing volume"**
 
 If there is no "post-processing volume", you can add a new "post-processing volume". Set its "**Infinite Extent (Unbound)**" property to **true**. 
 
